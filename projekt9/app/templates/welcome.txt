@@ -1,0 +1,6 @@
+Cześć $username!
+
+Dziękujemy za rejestrację w naszym systemie.
+
+Miłego dnia!
+Suma-Soft
