@@ -1,7 +1,13 @@
 from fastapi import FastAPI
+from .routers import tasks
+from .database import Base, engine
 
-app = FastAPI()
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI(title="TODO API")
+
+app.include_router(tasks.router)
 
 @app.get("/")
-def read_root():
-    return {"message": "Projekt 1 działa ✔️"}
+def root():
+    return {"message": "TODO API działa! ✔️"}
