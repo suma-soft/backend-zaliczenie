@@ -1,9 +1,14 @@
-# Projekt 1 – TODO List API
+# Projekt 1 – # TODO API - DSW47857
 
-RESTful API do zarządzania zadaniami. CRUD, filtrowanie i sortowanie.
+**Opis:** RESTful API do zarządzania zadaniami z pełną obsługą CRUD, filtrowaniem oraz sortowaniem.
 
-## Uruchomienie
+## Funkcje
+- CRUD dla zadań (Create, Read, Update, Delete)
+- Filtrowanie po statusie i priorytecie
+- Sortowanie po dacie utworzenia
+- Użycie FastAPI + SQLite (SQLAlchemy)
 
+## Jak uruchomić
 ```bash
 cd projekt1
 python3 -m venv venv
